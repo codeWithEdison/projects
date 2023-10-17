@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            overflow: hidden;
+        }
+
+        .slideshow {
+            display: flex;
+            animation: slide 5s linear infinite;
+        }
+
+        .slide {
+            flex: 0 0 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .slide img {
+            max-width: 100%;
+            max-height: 300px;
+        }
+
+        .description {
+            background-color: #f2f2f2;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        .description h2 {
+            font-size: 24px;
+        }
+
+        .price {
+            color: #e74c3c;
+            font-size: 20px;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+            20% {
+                transform: translateX(0);
+            }
+            25% {
+                transform: translateX(-100%);
+            }
+            45% {
+                transform: translateX(-100%);
+            }
+            50% {
+                transform: translateX(-200%);
+            }
+            70% {
+                transform: translateX(-200%);
+            }
+            75% {
+                transform: translateX(-300%);
+            }
+            95% {
+                transform: translateX(-300%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="slideshow">
+            <div class="slide">
+                <img src="image1.jpg" alt="Product 1">
+                <div class="description">
+                    <h2>Product 1</h2>
+                    <p>Description of Product 1</p>
+                    <p class="price">$99.99</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="image2.jpg" alt="Product 2">
+                <div class="description">
+                    <h2>Product 2</h2>
+                    <p>Description of Product 2</p>
+                    <p class="price">$79.99</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="image3.jpg" alt="Product 3">
+                <div class="description">
+                    <h2>Product 3</h2>
+                    <p>Description of Product 3</p>
+                    <p class="price">$129.99</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="image4.jpg" alt="Product 4">
+                <div class="description">
+                    <h2>Product 4</h2>
+                    <p>Description of Product 4</p>
+                    <p class="price">$149.99</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
